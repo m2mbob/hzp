@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<decorators defaultdir="/WEB-INF/decorators">
+	<excludes>
+		<pattern>/temp.jsp</pattern>
+		<pattern>/styles/*</pattern>
+		<pattern>/scripts/*</pattern>
+		<pattern>/statics/*</pattern>
+		<pattern>/images/*</pattern>
+		<pattern>/plugins/*</pattern>
+		<pattern>/struts/*</pattern>
+		<pattern>*.json</pattern>
+		<pattern>*_validator=true</pattern>
+		<pattern>*.jsv</pattern>
+		<pattern>/user/index.jsp</pattern>
+	</excludes>
+
+	<decorator name="admin" page="admin.jsp">
+		<pattern>/admin/*</pattern>
+	</decorator>
+	<decorator name="main" page="main.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+</decorators>

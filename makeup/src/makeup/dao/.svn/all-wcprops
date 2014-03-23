@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/makeup/!svn/ver/5/src/makeup/dao
+END
+DBConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/makeup/!svn/ver/5/src/makeup/dao/DBConfig.java
+END
+DBManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/makeup/!svn/ver/5/src/makeup/dao/DBManager.java
+END
+SqlFileExecutor.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/makeup/!svn/ver/5/src/makeup/dao/SqlFileExecutor.java
+END
+ConnectionPool.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/makeup/!svn/ver/5/src/makeup/dao/ConnectionPool.java
+END

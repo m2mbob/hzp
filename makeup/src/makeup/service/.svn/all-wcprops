@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/makeup/!svn/ver/5/src/makeup/service
+END
+OnlinetestService.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/makeup/!svn/ver/5/src/makeup/service/OnlinetestService.java
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/makeup/!svn/ver/5/src/makeup/service/UserService.java
+END
+IntroService.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/makeup/!svn/ver/5/src/makeup/service/IntroService.java
+END
+StandardService.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/makeup/!svn/ver/5/src/makeup/service/StandardService.java
+END
+EquipmentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/makeup/!svn/ver/5/src/makeup/service/EquipmentService.java
+END
+MethodService.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/makeup/!svn/ver/5/src/makeup/service/MethodService.java
+END
+UploadService.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/makeup/!svn/ver/5/src/makeup/service/UploadService.java
+END
+HelpService.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/makeup/!svn/ver/5/src/makeup/service/HelpService.java
+END
+IndexService.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/makeup/!svn/ver/5/src/makeup/service/IndexService.java
+END
+OrganizationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/makeup/!svn/ver/5/src/makeup/service/OrganizationService.java
+END

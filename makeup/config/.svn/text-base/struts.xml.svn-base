@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+ "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.serve.static.browserCache" value="false"/>
+    <constant name="struts.date.format" value="yyyy-MM-dd"/>
+    <constant name="struts.ui.theme" value="simple"/>
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <constant name="struts.multipart.paeser" value="jakarta">
+    </constant>
+    <constant name="struts.custom.i18n.resources" value="globalMessages"/>
+    <constant name="struts.multipart.saveDir" value="/tmp">
+    </constant>
+	<constant name="struts.multipart.maxSize" value="900000000"/>
+    
+    <package name="default" namespace="" extends="struts-default">
+        
+        
+        
+        <default-action-ref name="index"/>
+        
+        <global-results>
+            <result name="login">
+                /login.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </global-results>
+        
+        <global-exception-mappings>
+            <exception-mapping exception="java.lang.Exception"
+             result="error"/>
+        </global-exception-mappings>
+        
+  
+      <!--   <action name="index" class="makeup.action.IndexAction">
+            <result name="success">
+                /index.jsp
+            </result>
+        </action> -->
+		
+		<action name="equipment" class="makeup.action.EquipmentAction">
+            <result name="success">
+                /equipment.jsp
+            </result>
+			<result name="one">
+                /equipmentone.jsp
+            </result>
+        </action>
+        
+        <action name="help" class="makeup.action.HelpAction">
+            <result name="success">
+                /help.jsp
+            </result>
+        </action>
+        
+        <action name="intro" class="makeup.action.IntroAction">
+            <result name="success">
+                /intro.jsp
+            </result>
+        </action>
+        
+        <action name="method" class="makeup.action.MethodAction">
+            <result name="success">
+                /method.jsp
+            </result>
+			<result name="one">
+                /methodone.jsp
+            </result>
+        </action>
+        
+        <action name="organization" class="makeup.action.OrganizationAction">
+            <result name="success">
+                /organization.jsp
+            </result>
+			<result name="one">
+                /organizationone.jsp
+            </result>
+        </action>
+		
+		<action name="standard" class="makeup.action.StandardAction">
+            <result name="success">
+                /standard.jsp
+            </result>
+			<result name="one">
+                /standardone.jsp
+            </result>
+        </action>
+        
+		
+		
+		
+    </package>
+    
+    
+    <include file="admin.xml"/>
+    <!-- Add packages here -->
+    
+</struts>

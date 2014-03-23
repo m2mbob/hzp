@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+ "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    
+    <package name="admin" namespace="/admin" extends="default">
+        
+        <default-action-ref name="index"/>
+        
+        <global-results>
+            <result name="login">
+                /login.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </global-results>
+		
+        <action name="equipment" class="makeup.action.admin.EquipmentAction">
+            <result name="success" type="redirect">
+                /admin/equipment
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+            <result name="equipment">
+                /admin/equipment.jsp
+            </result>
+            <result name="one">
+                /admin/updateequipment.jsp
+            </result>
+        </action>
+		
+		<action name="help" class="makeup.action.admin.HelpAction">
+            <result name="help">
+                /admin/addhelp.jsp
+            </result>
+            <result name="success" type="redirect">
+                /admin/help
+            </result>
+        </action>
+		
+		<action name="intro" class="makeup.action.admin.IntroAction">
+            <result name="intro">
+                /admin/addintro.jsp
+            </result>
+            <result name="success" type="redirect">
+                /admin/intro
+            </result>
+        </action>
+        
+        
+        
+        <action name="method" class="makeup.action.admin.MethodAction">
+            <result name="method">
+                /admin/method.jsp
+            </result>
+            <result name="success" type="redirect">
+                /admin/method.jsp
+            </result>
+            <result name="one">
+                /admin/updatemethod.jsp
+            </result>
+        </action>
+        
+        <action name="organization" class="makeup.action.admin.OrganizationAction">
+            <result name="organization">
+                /admin/organization.jsp
+            </result>
+            <result name="success" type="redirect">
+                /admin/organization.jsp
+            </result>
+            <result name="one">
+                /admin/updateorganization.jsp
+            </result>
+        </action>
+        
+        <action name="standard" class="makeup.action.admin.StandardAction">
+            <result name="standard">
+                /admin/standard.jsp
+            </result>
+            <result name="success" type="redirect">
+                /admin/standard.jsp
+            </result>
+            <result name="one">
+                /admin/updatestandard.jsp
+            </result>
+        </action>
+        
+        
+        <action name="index" class="makeup.action.admin.IndexAction">
+            <result name="success" type="redirect">
+                /admin/intro
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+        
+        <action name="login" class="makeup.action.admin.LoginAction">
+            <result name="success" type="redirect">
+                /admin/intro
+            </result>
+            <result name="index" type="redirect">
+                /index
+            </result>
+            <result name="failure" type="redirect">
+                /login.jsp
+            </result>
+        </action>
+        
+   </package>
+</struts>
